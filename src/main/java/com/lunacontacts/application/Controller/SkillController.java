@@ -20,6 +20,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.Optional;
 
+
+
+/**
+ * CRUD operations
+ * ModelMapper -> to make object mapping easy, by automatically determining how one object model maps to another
+ * @use SkillRepository, SkillService
+ */
+
 @RestController
 @RequestMapping("/api/v1/skills")
 public class SkillController {

@@ -9,6 +9,11 @@ import javax.persistence.ManyToMany;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+/**
+ * JPA Entity - Skill
+ * @Id: Specifies the primary key of an entity.
+ * @GeneratedValue: Provides for the specification of generation strategies for the values of primary keys.
+ */
 
 @Entity
 public class Skill {
@@ -16,7 +21,6 @@ public class Skill {
     @Id
     @GeneratedValue
     private Long skillId;
-
 
     @NotNull(message = "Name is required")
     @Size(min = 1, max = 20, message = "Name must be between 1 and 20 characters long")
@@ -37,6 +41,7 @@ public class Skill {
         this.level = level;
     }
 
+    //getters & setters
     public Long getSkillId() {
         return skillId;
     }

@@ -5,6 +5,9 @@ import java.util.Set;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.lunacontacts.application.Model.Contact;
 
+/**
+ * Data Transfer Objects - Skill
+ */
 public class SkillDTO {
 
     private Long skillId;

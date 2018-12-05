@@ -14,6 +14,7 @@ import java.util.Set;
  * @Id: Specifies the primary key of an entity.
  * @GeneratedValue: Provides for the specification of generation strategies for the values of primary keys.
  */
+
 @Entity
 public class Contact {
 
@@ -63,6 +64,7 @@ public class Contact {
     )
     private Set<Skill> skills = new HashSet<>();
 
+
     public Contact() {
     }
 
@@ -75,6 +77,7 @@ public class Contact {
         this.mobile = mobile;
     }
 
+    //getters & setters
     public Long getContactId() {
         return contactId;
     }

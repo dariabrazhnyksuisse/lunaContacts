@@ -3,7 +3,7 @@ package com.lunacontacts.application.DTO;
 import java.util.Set;
 
 /**
- * Data Transfer Objects
+ * Data Transfer Objects - Contact
  */
 public class ContactDTO {
 

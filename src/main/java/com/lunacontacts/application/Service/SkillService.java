@@ -11,13 +11,15 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+/**
+ * Service layer
+ */
+
 @Service
 public class SkillService {
 
     private final ModelMapper modelMapper;
-
     private static final Logger LOG = LoggerFactory.getLogger(SkillService.class);
-
     private final SkillRepository skillRepository;
 
     @Autowired
