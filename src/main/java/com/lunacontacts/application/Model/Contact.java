@@ -31,7 +31,7 @@ public class Contact {
     private String lastName;
 
     @NotNull(message = "Full name is required")
-    @Size(min = 1, max = 50, message = "Last name must be between 1 and 50 characters long")
+    @Size(min = 1, max = 50, message = "Full name must be between 1 and 50 characters long")
     private String fullName;
 
     @NotNull(message = "Address is required")

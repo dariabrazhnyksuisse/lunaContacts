@@ -37,6 +37,7 @@ public class ContactService {
 
     public ContactDTO save(ContactDTO newContactDTO) {
         LOG.debug("creating contact: {}", newContactDTO);
+        // map (instance, destination)
         Contact contact = this.contactRepository.save(modelMapper.map(newContactDTO, Contact.class));
         newContactDTO.setId(contact.getContactId());
         return newContactDTO;

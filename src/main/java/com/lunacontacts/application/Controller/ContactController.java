@@ -22,7 +22,7 @@ import java.util.Optional;
 /**
  * CRUD operations
  * ModelMapper -> to make object mapping easy, by automatically determining how one object model maps to another
- * @use ContactRepository, ContactService
+ * @use ContactService
  */
 @RestController
 @RequestMapping("/api/v1/contacts")

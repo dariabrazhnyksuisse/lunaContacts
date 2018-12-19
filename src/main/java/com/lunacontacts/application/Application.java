@@ -6,13 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 
-
-
-@SpringBootApplication
+@SpringBootApplication// same as @Configuration @EnableAutoConfiguration @ComponentScan
 public class Application {
     /**
-     *
-     *  library -> to perform entity-com.lunacontacts.application.DTO conversion - ModelMapper.
+     *  library -> to perform entity-com.lunacontacts.application.DTO conversion - ModelMapper
      */
     @Bean
     public ModelMapper modelMapper() {

@@ -9,8 +9,9 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /*
- * Spring bean of type Docket. This will be picked up by Springfox to
- * configure some of the swagger documentation output.
+
+ * Spring Bean of type Docket. This will be picked up by Springfox to
+ * configure Swagger documentation output.
  */
 
 @Configuration
@@ -18,6 +19,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class SwaggerConfig {
     @Bean
     public Docket api() {
+        //to control endpoints exposed by Swagger
+        //any() makes documentation for API through Swagger
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
                 .apis(RequestHandlerSelectors.any())
