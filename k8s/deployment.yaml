@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: luna-contacts
-          image: luna-contacts:2.0 # your latest working image
-          imagePullPolicy: Never # IMPORTANT for local Minikube
+          image: luna-contacts:2.0
+          imagePullPolicy: Never
           ports:
             - containerPort: 8080
