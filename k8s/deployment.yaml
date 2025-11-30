@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: luna-contacts
+  labels:
+    app: luna-contacts
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: luna-contacts
+  template:
+    metadata:
+      labels:
+        app: luna-contacts
+    spec:
+      containers:
+        - name: luna-contacts
+          image: luna-contacts:2.0 # your latest working image
+          imagePullPolicy: Never # IMPORTANT for local Minikube
+          ports:
+            - containerPort: 8080
